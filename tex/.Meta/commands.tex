@@ -1,2 +1,17 @@
+\definecolor{SpecialBlue}{rgb}{0.10,0.58,0.9}
+\hypersetup{
+    colorlinks = true, 
+    urlcolor   = SpecialBlue, 
+    linkcolor  = SpecialBlue, 
+    citecolor  = SpecialBlue}
+
+\newcommand\convertdate[1]{\expandafter\convertdateaux#1\relax}
+\def\convertdateaux#1 #2, #3\relax{#2.\@ #1 #3}
+
+\predate{\begin{center}\normalfont\bfseries\color{SpecialBlue}}
+\date{«\kern 1em Compiled on \today\kern 1em »}
+\postdate{\end{center}}
+
 \renewcommand{\abstractnamefont}{\normalfont\bfseries}
 \renewcommand{\abstracttextfont}{\normalfont\small\itshape}
+\renewcommand{\linenumberfont}{\normalfont\tiny\color{SpecialBlue}}

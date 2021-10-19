@@ -1,1 +1,18 @@
-Text goes here... !!!!
+« ABSTRACT CONTENT GOES HERE » \\
+
+\textbf{Outline} \\
+1. Introduction \\
+    The kinds of PDE solvers \\
+    The computational similarities
+    FDM, SBP-SAT and its advantages.  \\
+    The under development of FDM solvers.  \\
+
+2. Massive scale PDE solvers \\
+    MFEM, other FEM solvers. \\
+
+3. Common matrix free constructions. \\
+    Practical SBP-SAT analogies. \\
+    Source to source compilers. \\
+    
+4. The benefits of FDM \\
+    FEM constructions, similified by \\
