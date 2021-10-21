@@ -1,12 +1,15 @@
-Partial differential equations (PDEs) and the numeric approximations to 
-their solutions have long been sought across disciplines for their uses 
-in modelling physical systems.
-Several classes of constructing numeric solutions to PDEs exist such as 
-finite element methods (FEMs), finite volume methods (FVMs), and finite 
-difference methods (FDMs). 
+Partial differential equations (PDEs) and the numeric approximations to their solutions have long been sought across disciplines for their uses in modelling physical systems. 
+The particular concerns 
+
+Summation-by-parts (SBP) operators are finite difference method (FDM) schemes that are assembled alongside simultaneous approximation terms (SATs) to yield an SBP--SAT numeric framework with a useful set of properties for practitioners interested in discretizations with high-order numeric accuracy. 
+
+
+is a specific construction 
+
+Several classes of constructing numeric solutions to PDEs exist such as finite element methods (FEMs), finite volume methods (FVMs), and finite difference methods (FDMs). 
 
 Each class is derived from a distinct mathematical methodology, though their resulting discretizations often resemble each other in a computational context. 
-FDMs in particular are derived from an approximation of the derviative through finite difference---for example through centered differences to approximate the second derivative: 
+FDMs in particular are derived from an approximation of the derviative through finite difference---for example, through centered differences to approximate the second derivative: 
 
 \[
     f^{\prime\prime}(x) = \lim_{h \to 0} \dfrac{f(x - h) + 2 \times f(x) - f(x + h)}{h^2}
@@ -15,22 +18,17 @@ FDMs in particular are derived from an approximation of the derviative through f
 
 
 
-Specific methods are chosen by practioners only for the certain 
-properties that distinguish one method from another s.t. that it 
-simplifies the construction of an initial boundary value problem (IBVP). 
+Specific methods are chosen by practioners only for the certain properties that distinguish one method from another s.t. that it simplifies the construction of an initial boundary value problem (IBVP). 
 
-Summation-By-Parts with Simultanious Approximation Terms (SBP-SAT) is a 
-particular FDM construction satisfying
+Summation-By-Parts with Simultanious Approximation Terms (SBP-SAT) is a particular FDM construction satisfying
 
 \[
     f^{\prime}(x) = \lim_{h \to 0} \dfrac{f(x + h) - f(x)}{h}
 \]
 
-This work evaluates the extent to which computational efficencies have 
-been sought in the application of SBP-SAT. 
+This work evaluates the extent to which computational efficencies have been sought in the application of SBP-SAT. 
 
-FEMs are not the topic of this work, though it is neccesary to mention
-that these methods comprise the majority of numerical PDE solvers used 
-on high performance applications. 
-The proported rationale for FEMs is that they place fewer constraints 
-on the assembly of the problem and handle complex geometries. 
+FEMs are not the topic of this work, though it is neccesary to mention that these methods comprise the majority of numerical PDE solvers used on high performance applications. 
+The proported rationale for FEMs is that they place fewer constraints on the assembly of the problem and handle complex geometries. 
+
+
