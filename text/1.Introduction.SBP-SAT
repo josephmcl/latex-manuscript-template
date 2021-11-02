@@ -1,12 +1,10 @@
-Partial differential equations (PDEs) and the numeric approximations to their solutions have long been sought across disciplines for their uses in modelling physical systems. 
-The particular concerns 
-
-Summation-by-parts (SBP) operators are finite difference method (FDM) schemes that are assembled alongside simultaneous approximation terms (SATs) to yield an SBP--SAT numeric framework with a useful set of properties for practitioners interested in discretizations with high-order numeric accuracy. 
+ummation-by-parts (SBP) operators are finite difference method (FDM) schemes that are assembled alongside simultaneous approximation terms (SATs) to yield an SBP--SAT numeric framework with a useful set of properties for practitioners interested in discretizations with high-order numeric accuracy. 
+SBP--SAT yields a 
 
 
 is a specific construction 
 
-Several classes of constructing numeric solutions to PDEs exist such as finite element methods (FEMs), finite volume methods (FVMs), and finite difference methods (FDMs). 
+
 
 Each class is derived from a distinct mathematical methodology, though their resulting discretizations often resemble each other in a computational context. 
 FDMs in particular are derived from an approximation of the derviative through finite difference---for example, through centered differences to approximate the second derivative: 

@@ -1,0 +1,12 @@
+In a practical context there are a few classes of numerical methods for solving PDEs: finite difference methods (FDMs), finite element methods (FEMs), and finite volume methods (FVMs). 
+
+
+
+FDMs are among the oldest numerical methods for solving PDEs and are derived from approximations to derivative through a discrete finite difference. 
+Historically, FDMs lacked a rigorous means to prove \textit{conservation of energy} throughout the numerical system;
+however, in a modern context FDMs have been constructed with provable conservation of energy.
+
+
+FEMs are a more recent methodology wherein PDEs are approximated by a collection of simpler algebraic functions---called elements---in a nodal mesh. 
+The solution is approximated by minimizing the system of error functions associated with each element.
+FEMs gained popularity in engineering disciplines because they had proofs of conservation and often supported unstructured meshes.

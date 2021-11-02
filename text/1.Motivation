@@ -1,0 +1,22 @@
+Vast amounts of resources have been spent of optimization techniques for exascale destined computing tasks. 
+Notable among these tasks is determining the numeric solutions to PDEs for complex problems. 
+In the last 40 years, FEMs have been preferred by practitioners and researchers alike for solving complex PDEs on high-performance systems. 
+This reality is evident in the vast number of libraries and software utilities to assist in the assembly of PDE using FEMs. 
+The reasons for this preference was due to numerical provability properties that FEMs had that other methods---e.g. FDMs---did not.
+In the last 20 years we have seen the same properties emerge for FDMs, though the library support remains absent. 
+FDMs are generally easier to understand and assemble for analogous problems using FEMs.
+
+
+Still, several organizations the Center for Efficient Exascale Discretizations under the U.S. Department of Energy are primarily concerned with FEMs. 
+With exascale numerical PDE problems on the horizon, it is necessary to understand the properties of different numerical methods for approximating PDEs in both mathematical and a performance context. 
+The two classes of numerical methods share more in common than was the case historically, and understanding this relationship may reveal unconventional opportunities for optimization.     
+
+
+{\color{SpecialBlue} 
+\begin{itemize} 
+    \item section 2 mathematics 
+    \item section 3 software
+    \item section 4 performance
+\end{itemize}
+
+}

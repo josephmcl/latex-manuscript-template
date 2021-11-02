@@ -1,6 +1,25 @@
+
+
+Software that solves PDEs numerically on high-performance systems is built at several different levels of abstraction. 
+As FEM describes a class of discretization methods, some software is designed to support common FEM tasks while others are specialized for specific methods such as Discontinuous Galerkin (DG) or Discontinuous Petrov-Galerkin (DPG) approaches. 
+
+Other software packages are designed with incredibly broad intentions. 
+
+High-performance systems for solving PDEs are almost always built upon existing linear algebra libraries with existing data structures and routines for assembling non-trivial systems. Libraries such as  OpenBLAS (\citet{OpenBLAS}), Eigen (\citet{gael2010eigen}), and Trilinos, implement many of the common linear algebra operations necessary for high performance applioca
+
+
+PETSc (\citet{balay1998petsc}),
+
+is a software library containing several datatypes and software routines such as  \textit{solvers} (i.e. for solving linear systems of equations), preconditioners, and timestepping methods, supporting different parallelization frameworks such as CUDA, OpenCL, and MPI. \cite{balay1998petsc}
+
+MFEM is a widely implemented C++ library for constructing discritizations of PDEs in for several classes of FEMs \cite{anderson2021mfem}. 
+More-so, MFEM can be seen as a collection of components necessary to assemble an FEM problem. 
+This library supports several operations in sparse matrix and matrix-free constructions, as well as other auxiliary, but useful, tools including mesh-refinement algorithms (particular to FEM), solvers, time integrators, and preconditioners.  
+
 Solvers designed for the high-performance applications typically implement FEM schemes to discretize continuous systems. 
 
 
 Libraries such as FMEM and DUNE are widely implemented frameworks for constructing nodal discretizations, often intended for high-performance systems \cite{anderson2021mfem, bastian2021dune}. 
 
 for \textit{unstructured grids} where the discretization is comprised of nodal elements that lack a structured order (e.g. rectilinear.)
+
