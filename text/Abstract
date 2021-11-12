@@ -1,5 +1,1 @@
-Summation-by-parts (SBP) operators assembled alongside simultaneous approximation terms (SATs) yield an attractive scheme for domain scientists seeking to solve certain classes of PDEs with high-order accuracy. 
-The resulting SBP--SAT method guarantees conservation of energy over the system while maintaining a flexible construction. 
-This paper surveys the development of SBP--SAT for large, high-performance applications in contrast to more robustly implemented finite element methods (FEMs). 
-A brief history and theory of SBP--SAT is discussed, as its relationship to FEMs.
-The computational benefits of SBP--SAT is explored in detail, in particular with respect to the regularity of the SBP operators and applications within a broader HPC context. \\
+\lipsum[1-2]

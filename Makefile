@@ -1,4 +1,4 @@
-output   := Survey_Matrix_Free_Conjugate_Gradient_SBP-SAT
+output   := manuscript
 builddir := build
 texdir   := tex
 infile   := paper
